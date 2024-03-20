@@ -2,12 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Roboto Mono", "Roboto Mono", "Vazirmatn", monospace;
 }
 
 body{
   height: 100vh;
-  background-color: #1d2630;
+  background-color: #323437;
   display: flex;
   justify-content: center;
   align-items: center;
