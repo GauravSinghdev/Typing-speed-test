@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Speed Typer App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Typing Test</h1>
+    <div class="stats">
+      <p>Timer: <span id="timer">0s</span></p>
+      <p>Mistake: <span id="mistakes">0</span></p>
+    </div>
+    <div 
+      id="quote" 
+      onmousedown="return false"
+      onselectstart="return false"
+    ></div>
+    <textarea 
+      rows="3"
+      name="quotes"
+      id="quote-input"
+      placeholder="Type here"
+    ></textarea>
+
+    <button id="start-test" onclick="startTest()">Start Test</button>
+    <button id="stop-test" onclick="displayResult()">Stop Test</button>
+    <div class="result">
+      <h3>Result</h3>
+      <div class="wrapper">
+        <p>Accuracy: <span id="accuracy"></span></p>
+        <p>Speed: <span id="wpm"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
